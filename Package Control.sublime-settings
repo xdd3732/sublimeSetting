@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Dracula Color Scheme",
+		"Material Theme",
+		"Materialize",
+		"Package Control",
+		"PackageResourceViewer",
+		"SideBarEnhancements"
+	]
+}
