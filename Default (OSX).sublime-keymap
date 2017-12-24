@@ -1,4 +1,75 @@
 [
-	{ "keys": ["super+\\"], "command": "toggle_side_bar" },	
-	{ "keys": ["super+shift+\\"], "command": "reveal_in_side_bar"}
+    { "keys": ["super+\\"], "command": "toggle_side_bar" },
+    { "keys": ["alt+\\"], "command": "reveal_in_side_bar"},
+
+    { "keys": ["super+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
+    { "keys": ["super+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
+    { "keys": ["super+alt+v"], "command": "paste_from_history" },
+
+    { "keys": ["super+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+    { "keys": ["super+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["super+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["super+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    { "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+    { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+    { "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+    { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } },
+
+    { "keys": ["super+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+    { "keys": ["super+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
+    { "keys": ["super+m"], "command": "move_to", "args": {"to": "brackets"} },
+
+    { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["super+`"], "command": "goto_definition" },
+    { "keys": ["alt+`"], "command": "jump_back" },
+    { "keys": ["alt+shift+`"], "command": "jump_forward" },
+    { "keys": ["super+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["alt+h"], "command": "replace_next" },
+    { "keys": ["alt+f"], "command": "find_next" },
+    { "keys": ["alt+shift+f"], "command": "find_prev" },
+
+    { "keys": ["super+shift+up"], "command": "swap_line_up" },
+    { "keys": ["super+shift+down"], "command": "swap_line_down" },
+
+    { "keys": ["super+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+    { "keys": ["super+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+
+    { "keys": ["super+shift+["], "command": "fold" },
+    { "keys": ["super+shift+]"], "command": "unfold" },
+
+    // For Origami
+    { "keys": ["alt+a", "up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+a", "right"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+a", "down"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+a", "left"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["alt+a", "shift+up"], "command": "carry_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+a", "shift+right"], "command": "carry_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+a", "shift+down"], "command": "carry_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+a", "shift+left"], "command": "carry_file_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["alt+a", "super+up"], "command": "clone_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+a", "super+right"], "command": "clone_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+a", "super+down"], "command": "clone_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+a", "super+left"], "command": "clone_file_to_pane", "args": {"direction": "left"} },
+    // You can also create the pane automatically with the following command (insert empty parameters):
+    // { "keys": [], "command": "create_pane_with_cloned_file", "args": {"direction": ""} }
+
+    { "keys": ["alt+a", "alt+up"], "command": "create_pane", "args": {"direction": "up"}, "give_focus": true },
+    { "keys": ["alt+a", "alt+right"], "command": "create_pane", "args": {"direction": "right"}, "give_focus": true },
+    { "keys": ["alt+a", "alt+down"], "command": "create_pane", "args": {"direction": "down"}, "give_focus": true },
+    { "keys": ["alt+a", "alt+left"], "command": "create_pane", "args": {"direction": "left"}, "give_focus": true },
+    // You can also add  "give_focus": true to automatically focus on the new pane as follows:
+    // { "keys": [], "command": "create_pane", "args": {"direction": "", "give_focus": true} }
+    { "keys": ["alt+a", "x"], "command": "destroy_pane", "args": {"direction": "self"} },
+    { "keys": ["alt+a", "z"], "command": "toggle_zoom_pane", "args": {"fraction": 0.9} },
+
+    { "keys": ["alt+a", "c"], "command": "resize_pane", "args": {"orientation": "cols"} },
+    { "keys": ["alt+a", "r"], "command": "resize_pane", "args": {"orientation": "rows"} },
+
+    { "keys": ["super+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 ]

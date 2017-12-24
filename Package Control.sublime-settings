@@ -6,11 +6,14 @@
 	"installed_packages":
 	[
 		"Anaconda",
-		"Dracula Color Scheme",
-		"Material Theme",
+		"FindKeyConflicts",
 		"Materialize",
+		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-pylint",
+		"Sublimerge 3"
 	]
 }
