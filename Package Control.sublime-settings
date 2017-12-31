@@ -5,15 +5,19 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"Anaconda",
+		"BracketHighlighter",
 		"FindKeyConflicts",
+		"InactivePanes",
+		"Local History",
 		"Materialize",
+		"MaxPane",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
 		"SideBarEnhancements",
-		"SublimeLinter",
-		"SublimeLinter-pylint",
-		"Sublimerge 3"
+		"Sublimerge 3",
+		"TerminalView"
 	]
 }

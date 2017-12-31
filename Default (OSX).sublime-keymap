@@ -1,4 +1,5 @@
 [
+    { "keys": ["super+shift+t"], "command": "new_file", "context": [{"key": "setting.terminal_view"}]},
     { "keys": ["super+\\"], "command": "toggle_side_bar" },
     { "keys": ["alt+\\"], "command": "reveal_in_side_bar"},
 

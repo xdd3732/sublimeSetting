@@ -97,7 +97,7 @@
 
             "python_interpreter": "tcp://my_remote.machine.com:19360"
     */
-    "python_interpreter": "python2",
+    "python_interpreter": "/usr/local/bin/python2",
 
     /*
         Disable anaconda completion
@@ -119,7 +119,7 @@
         If complete_all_parameters is true, it will add all the possible
         parameters, if it's false, it will add only required parameters
     */
-    "complete_parameters": false,
+    "complete_parameters": true,
     "complete_all_parameters": false,
 
     /*
@@ -297,7 +297,7 @@
         If 'squiggly_underline', anaconda will draw a squiggly underline below regions.
         If 'none', anaconda will not draw anything on error lines.
     */
-    "anaconda_linter_mark_style": "squiggly_underline",
+    "anaconda_linter_mark_style": "none",
 
     /*
         If this is set to false, anaconda will not underline errors.

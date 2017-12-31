@@ -5,7 +5,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Material Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Materialize/schemes/Material Monokai.tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
 	"font_face": "fira mono",
